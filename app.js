@@ -52,7 +52,7 @@ var data={
      response.on("data",function(data){
          console.log(JSON.parse(data));
      })
-
+console.log(response.statusCode);
      if(response.statusCode==200){
         res.sendFile(__dirname + "/success.html");
      }
